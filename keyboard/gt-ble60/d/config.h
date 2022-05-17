@@ -45,7 +45,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define KEYBOARD_FAST_SCAN_INTERVAL 10 // 通常模式下，多久扫描一次键盘 (ms)
 #define KEYBOARD_SLOW_SCAN_INTERVAL 100 // 慢速模式下，多久扫描一次键盘 (ms)
 #define LED_AUTOOFF_TIME 5 /* LED自动熄灭时长(s)，设为0则不自动熄灭 */
-#define DCDC_ENABLED //启用DCDC电源模式
+//#define DCDC_ENABLED //启用DCDC电源模式
 
 // 键盘额外功能
 //#define DYNAMIC_TX_POWER /* 启用自动发射功率调整 */
@@ -118,5 +118,5 @@ static const uint8_t column_pin_array[MATRIX_COLS] = {30, 28, 24, 22, 21, 10, 11
 /* define if matrix has ghost */
 // #define MATRIX_HAS_GHOST /* 按键阵列是否出现Ghost Key，若没有加二极管则需要启用这个项目 */
 
-#define DEBOUNCE 5 /* 硬件消抖次数，设置为0则不消抖 */
-#define MATRIX_SCAN_DELAY_CYCLE 48 /* 按键扫描等待IO稳定的延时时长 */
+#define DEBOUNCE 10 /* 硬件消抖次数，设置为0则不消抖 */
+#define MATRIX_SCAN_DELAY_CYCLE 40 /* 按键扫描等待IO稳定的延时时长 */
