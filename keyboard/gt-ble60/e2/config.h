@@ -24,10 +24,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID 0x1209 /* USB VID */
 #define PRODUCT_ID 0x0514 /* USB PID */
 #define CONF_VENDOR_ID 0x4366 /* 配置项目内显示的VendorID */
-#define CONF_PRODUCT_ID 0x0315 /* 配置项目内显示的ProductID */
+#define CONF_PRODUCT_ID 0x0311 /* 配置项目内显示的ProductID */
 #define DEVICE_VER 0x0000 /* 硬件版本 */
 #define MANUFACTURER "Glab" /* 硬件制造商，用于蓝牙显示 */
-#define PRODUCT "GT BLE60E" /* 硬件名词，用于蓝牙显示 */
+#define PRODUCT "GT BLE60D" /* 硬件名词，用于蓝牙显示 */
 #define MACADDR_SEPRATOR ' ' /* 蓝牙名称后地址的分隔符。若不设置则不显示蓝牙名称后面的地址 */
 
 /* USB HID report parameter */
