@@ -16,9 +16,13 @@ INC_FOLDERS += \
 	. \
 	$(USER_SRC_DIR) \
 
-SRC_FILES += \
-	keymap_plain.c \
-	$(USER_SRC_DIR)/user_fn.c
+ifeq (yes,$(strip $(ACTIONMAP_ENABLE)))
+	SRC_FILES += actionmap_plain.c
+else
+	SRC_FILES += keymap_plain.c
+endif
+
+SRC_FILES += $(USER_SRC_DIR)/user_fn.c
 
 # 发布相关设置
 export VERSION=11$(shell git log --abbrev-commit --pretty=oneline -1 | cut -c 1-6 || echo 'unknown')
