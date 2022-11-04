@@ -39,13 +39,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define BOOTMAGIC_KEY_ERASE_BOND KC_E /* 删除所有绑定 */
 
 // 键盘省电参数
-#define SLEEP_SLOW_TIMEOUT 15 // 键盘闲置多久后转入慢速扫描模式 (s)
+#define SLEEP_SLOW_TIMEOUT 300 // 键盘闲置多久后转入慢速扫描模式 (s)
 #define SLEEP_OFF_TIMEOUT 1200 // 键盘闲置多久后转入自动关机 (s)
 #define KEYBOARD_SCAN_INTERVAL 1 // 键盘最小时间单位TICK (ms)
 #define KEYBOARD_FAST_SCAN_INTERVAL 10 // 通常模式下，多久扫描一次键盘 (ms)
 #define KEYBOARD_SLOW_SCAN_INTERVAL 100 // 慢速模式下，多久扫描一次键盘 (ms)
-#define LED_AUTOOFF_TIME 5 /* LED自动熄灭时长(s)，设为0则不自动熄灭 */
-//#define DCDC_ENABLED //启用DCDC电源模式
+#define LED_AUTOOFF_TIME 10 /* LED自动熄灭时长(s)，设为0则不自动熄灭 */
+#define DCDC_ENABLED //启用DCDC电源模式
 
 // 键盘额外功能
 //#define DYNAMIC_TX_POWER /* 启用自动发射功率调整 */
@@ -82,9 +82,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LED_STATUS_BLE 20
 #define LED_STATUS_CHARGING 26
 #define LED_STATUS_USB 27
-#define LED_BLE_CHANNEL1 20
-#define LED_BLE_CHANNEL2 27
-#define LED_BLE_CHANNEL3 19
+#define LED_BLE_CHANNEL1 19
+#define LED_BLE_CHANNEL2 20
+#define LED_BLE_CHANNEL3 27
 #define LED_POSITIVE // LED上拉驱动
 // 独立硬件按钮
 #define POWER_BUTTON 9
@@ -118,5 +118,5 @@ static const uint8_t column_pin_array[MATRIX_COLS] = {30, 28, 24, 22, 21, 10, 11
 /* define if matrix has ghost */
 // #define MATRIX_HAS_GHOST /* 按键阵列是否出现Ghost Key，若没有加二极管则需要启用这个项目 */
 
-#define DEBOUNCE 10 /* 硬件消抖次数，设置为0则不消抖 */
-#define MATRIX_SCAN_DELAY_CYCLE 40 /* 按键扫描等待IO稳定的延时时长 */
+#define DEBOUNCE 5 /* 硬件消抖次数，设置为0则不消抖 */
+#define MATRIX_SCAN_DELAY_CYCLE 48 /* 按键扫描等待IO稳定的延时时长 */
